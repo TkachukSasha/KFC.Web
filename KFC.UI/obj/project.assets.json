@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "KFC.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/KFC.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KFC.Domain.dll": {}
+        }
+      },
+      "KFC.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "KFC.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KFC.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KFC.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "KFC.Domain/1.0.0": {
+      "type": "project",
+      "path": "../KFC.Domain/KFC.Domain.csproj",
+      "msbuildProject": "../KFC.Domain/KFC.Domain.csproj"
+    },
+    "KFC.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../KFC.Infrastructure/KFC.Infrastructure.csproj",
+      "msbuildProject": "../KFC.Infrastructure/KFC.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "KFC.Domain >= 1.0.0",
+      "KFC.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\sasha\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sasha\\source\\repos\\KFC\\KFC.Domain\\KFC.Domain.csproj": {
+              "projectPath": "C:\\Users\\sasha\\source\\repos\\KFC\\KFC.Domain\\KFC.Domain.csproj"
+            },
+            "C:\\Users\\sasha\\source\\repos\\KFC\\KFC.Infrastructure\\KFC.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\sasha\\source\\repos\\KFC\\KFC.Infrastructure\\KFC.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

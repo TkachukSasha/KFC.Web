@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KFC.Domain\KFC.Domain.csproj" />
+    <ProjectReference Include="..\KFC.Infrastructure\KFC.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

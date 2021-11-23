@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Product>
+
+@{ 
+    Layout = null;
+}
+
+
+<div class="row mt-5 mb-2">
+    @foreach (var product in Model)
+    {
+    <div class="col-lg-4">
+        <img class="img-thumbnail" src="@product.ProductPhoto" alt="@product.ProductName" />
+        <h2>@product.ProductName</h2>
+        <p>@product.ProductDescription</p>
+        <p>@product.ProductAmount</p>
+        <p>@product.ProductSize</p>
+        <p>Цена:@product.ProductPrice.ToString("c")</p>
+    </div>
+    }
+</div>
+

@@ -34,3 +34,8 @@ C:\Users\sasha\source\repos\KFC\KFC.UI\obj\Debug\netcoreapp3.1\KFC.UI.dll
 C:\Users\sasha\source\repos\KFC\KFC.UI\obj\Debug\netcoreapp3.1\KFC.UI.pdb
 C:\Users\sasha\source\repos\KFC\KFC.UI\obj\Debug\netcoreapp3.1\KFC.UI.genruntimeconfig.cache
 C:\Users\sasha\source\repos\KFC\KFC.UI\obj\Debug\netcoreapp3.1\KFC.UI.csproj.CopyComplete
+C:\Users\sasha\source\repos\KFC\KFC.UI\bin\Debug\netcoreapp3.1\KFC.Domain.dll
+C:\Users\sasha\source\repos\KFC\KFC.UI\bin\Debug\netcoreapp3.1\KFC.Domain.pdb
+C:\Users\sasha\source\repos\KFC\KFC.UI\obj\Debug\netcoreapp3.1\Razor\Views\Search\Index.cshtml.g.cs
+C:\Users\sasha\source\repos\KFC\KFC.UI\bin\Debug\netcoreapp3.1\KFC.Infrastructure.dll
+C:\Users\sasha\source\repos\KFC\KFC.UI\bin\Debug\netcoreapp3.1\KFC.Infrastructure.pdb

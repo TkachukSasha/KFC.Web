@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "KFC.Infrastructure/1.0.0": {
+        "dependencies": {
+          "KFC.Domain": "1.0.0"
+        },
+        "runtime": {
+          "KFC.Infrastructure.dll": {}
+        }
+      },
+      "KFC.Domain/1.0.0": {
+        "runtime": {
+          "KFC.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KFC.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KFC.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
