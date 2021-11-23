@@ -1,0 +1,9 @@
+C:\Users\sasha\source\repos\KFC\KFC.Domain\bin\Debug\netcoreapp3.1\KFC.Domain.deps.json
+C:\Users\sasha\source\repos\KFC\KFC.Domain\bin\Debug\netcoreapp3.1\KFC.Domain.dll
+C:\Users\sasha\source\repos\KFC\KFC.Domain\bin\Debug\netcoreapp3.1\KFC.Domain.pdb
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.csproj.AssemblyReference.cache
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.AssemblyInfoInputs.cache
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.AssemblyInfo.cs
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.dll
+C:\Users\sasha\source\repos\KFC\KFC.Domain\obj\Debug\netcoreapp3.1\KFC.Domain.pdb
