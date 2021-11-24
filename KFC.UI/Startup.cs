@@ -26,7 +26,16 @@ namespace KFC.UI
         {
             services.AddControllersWithViews();
             services.AddMvc();
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+
             services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddDistributedMemoryCache();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,6 +55,8 @@ namespace KFC.UI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

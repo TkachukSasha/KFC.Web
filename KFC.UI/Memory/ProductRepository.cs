@@ -11,10 +11,20 @@ namespace KFC.UI.Memory
     {
         private readonly List<Product> products = new List<Product>
         {
-            new Product(1,"Дабл шеф бургер острый","Уникальный острый бургер от шефа",100,SizeOfProduct.big,105m, "/img/DoubleShefBurgerSpicy.png"),
-            new Product(2,"Дабл шефр бургер","Уникальний шеф бургер с двойной курицей",100,SizeOfProduct.big,105m,"/img/DoubleShefBurger.png"),
-            new Product(3,"Шеф бургер де люкс острый","Острый бургер от шефа",100,SizeOfProduct.big,69m ,"/img/ShefBurgerDeLuxeSpicy.png")
+            new Product(1,"Дабл шеф бургер острый","Уникальный острый бургер от шефа",1,SizeOfProduct.big,105m, "/img/DoubleShefBurgerSpicy.png"),
+            new Product(2,"Дабл шеф бургер","Уникальний шеф бургер с двойной курицей",1,SizeOfProduct.big,105m,"/img/DoubleShefBurger.png"),
+            new Product(3,"Шеф бургер де люкс острый","Острый бургер от шефа",1,SizeOfProduct.big,69m ,"/img/ShefBurgerDeLuxeSpicy.png")
         };
+
+        public List<Product> GetAllProducts()
+        {
+            return products.ToList();
+        }
+
+        public Product GetById(int id)
+        {
+            return products.Single(productId => productId.Id == id);
+        }
 
         public List<Product> GetByQuerry(string query)
         {

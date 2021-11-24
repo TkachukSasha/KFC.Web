@@ -1,4 +1,5 @@
-﻿using KFC.UI.Models;
+﻿using KFC.Domain.Services;
+using KFC.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,9 +12,18 @@ namespace KFC.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IProductRepository _repository;
+
+        public HomeController(IProductRepository repository)
+        {
+            _repository = repository;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var products = _repository.GetAllProducts();
+
+            return View(products);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

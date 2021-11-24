@@ -18,6 +18,10 @@ namespace KFC.UI.Controllers
 
         public IActionResult Index(string query)
         {
+            if(query == null)
+            {
+                throw new ArgumentNullException();
+            }
             var products = _repository.GetByQuerry(query);
 
             return View(products);

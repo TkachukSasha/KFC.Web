@@ -8,6 +8,8 @@ namespace KFC.Domain.Services
 {
     public interface IProductRepository
     {
+        List<Product> GetAllProducts();
         List<Product> GetByQuerry(string query);
+        Product GetById(int id);
     }
 }

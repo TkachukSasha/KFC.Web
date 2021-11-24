@@ -1,3 +1,19 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Product>
+
+<div class="row mt-5 mb-2">
+    @foreach (var products in Model)
+    {
+           <div class="col-lg-4">
+                <img class="img-thumbnail" src="@products.ProductPhoto" alt="@products.ProductName" />
+                <h2>@products.ProductName</h2>
+                <p>Описание:@products.ProductDescription</p>
+                <p>Количество:@products.ProductAmount</p>
+                <p>Размер:@products.ProductSize</p>
+                <p>Цена:@products.ProductPrice.ToString("c")</p>
+                <form action="@Url.Action("Add", "Cart")" method="post">
+                    <input type="hidden" name="id" value="@products.Id"/>
+                    <button class="btn btn-outline-success" type="submit">В корзину</button>
+                </form>
+           </div>
+    }
+</div>

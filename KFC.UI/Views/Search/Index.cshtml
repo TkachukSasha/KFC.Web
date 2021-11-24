@@ -1,20 +1,19 @@
 ﻿@model IEnumerable<Product>
 
-@{ 
-    Layout = null;
-}
-
-
 <div class="row mt-5 mb-2">
     @foreach (var product in Model)
     {
     <div class="col-lg-4">
         <img class="img-thumbnail" src="@product.ProductPhoto" alt="@product.ProductName" />
         <h2>@product.ProductName</h2>
-        <p>@product.ProductDescription</p>
-        <p>@product.ProductAmount</p>
-        <p>@product.ProductSize</p>
+        <p>Описание:@product.ProductDescription</p>
+        <p>Количество:@product.ProductAmount</p>
+        <p>Размер:@product.ProductSize</p>
         <p>Цена:@product.ProductPrice.ToString("c")</p>
+        <form action="@Url.Action("Add", "Cart")" method="post">
+            <input type="hidden" name="id" value="@product.Id" />
+            <button class="btn btn-outline-success" type="submit">В корзину</button>
+        </form>
     </div>
     }
 </div>
