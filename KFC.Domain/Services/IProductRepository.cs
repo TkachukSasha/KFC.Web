@@ -11,5 +11,6 @@ namespace KFC.Domain.Services
         List<Product> GetAllProducts();
         List<Product> GetByQuerry(string query);
         Product GetById(int id);
+        List<Product> GetAllByIds(IEnumerable<int> bookIds);
     }
 }

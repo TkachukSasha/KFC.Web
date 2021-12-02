@@ -16,6 +16,14 @@ namespace KFC.UI.Memory
             new Product(3,"Шеф бургер де люкс острый","Острый бургер от шефа",1,SizeOfProduct.big,69m ,"/img/ShefBurgerDeLuxeSpicy.png")
         };
 
+        public List<Product> GetAllByIds(IEnumerable<int> bookIds)
+        {
+            var foundProduct = from product in products
+                               join productId in bookIds on product.Id equals productId
+                               select product;
+            return foundProduct.ToList();
+        }
+
         public List<Product> GetAllProducts()
         {
             return products.ToList();
@@ -23,7 +31,7 @@ namespace KFC.UI.Memory
 
         public Product GetById(int id)
         {
-            return products.Single(productId => productId.Id == id);
+            return products.FirstOrDefault(productId => productId.Id == id);
         }
 
         public List<Product> GetByQuerry(string query)

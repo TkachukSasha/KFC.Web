@@ -35,6 +35,7 @@ namespace KFC.UI
 
 
             services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IOrderRepository, OrderRepository>();
             services.AddDistributedMemoryCache();
         }
 

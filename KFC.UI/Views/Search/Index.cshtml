@@ -10,8 +10,8 @@
         <p>Количество:@product.ProductAmount</p>
         <p>Размер:@product.ProductSize</p>
         <p>Цена:@product.ProductPrice.ToString("c")</p>
-        <form action="@Url.Action("Add", "Cart")" method="post">
-            <input type="hidden" name="id" value="@product.Id" />
+        <form action="@Url.Action("AddProduct", "Order")" method="post">
+            <input type="hidden" name="productId" value="@product.Id" />
             <button class="btn btn-outline-success" type="submit">В корзину</button>
         </form>
     </div>
